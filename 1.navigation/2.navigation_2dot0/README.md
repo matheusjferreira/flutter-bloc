@@ -19,7 +19,7 @@ samples, guidance on mobile development, and a full API reference. -->
 
 Neste exemplo, veremos como usar a API de páginas do Navigator 2.0 para lidar com roteamento em resposta a mudanças de estado em um bloco.
 
-Observação: vamos usar [package:flow_builder](https://pub.dev/packages/flow_builder) para simplificar o trabalho com a API do Navigator 2.0.
+> Observação: vamos usar [package:flow_builder](https://pub.dev/packages/flow_builder) para simplificar o trabalho com a API do Navigator 2.0.
 
 > ## Bloc
 
@@ -29,17 +29,25 @@ Para mostrar as vantagens do Navigator, vamos construir um exemplo um pouco mais
 
 **BookEvent** responderá a dois eventos: selecionar um livro e desmarcar um livro.
 
-BookState
+[book_event.dart](lib/book_event.dart).
+
+### :pushpin: BookState
 
 **BookState** conterá a lista de livros e um livro opcional selecionado se o usuário tocar em um livro.
 
-Bloco de Livros
+[book_state.dart](lib/book_state.dart).
+
+### :pushpin: BookBloc
 
 **BookBloc** vai lidar com a resposta a cada **BookEvent** e emitirá as devidas **BookState** em resposta:
 
-Camada de IU
+[book_bloc.dart](lib/book_bloc.dart).
+
+> ## Camada de IU
 
 Agora vamos conectar o bloco à nossa interface do usuário usando **FlowBuilder**!
+
+[main.dart](lib/main.dart).
 
 A fonte completa desta receita pode ser encontrada [aqui](https://gist.github.com/felangel/bd3cf504a10c0763a32f7a94e2649369).
 

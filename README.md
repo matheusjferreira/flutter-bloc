@@ -1,4 +1,4 @@
-# Bloc
+# Flutter Bloc
 
 Coleção de aplicavitos Flutter com foco no estudo do Bloc (gerenciador de estado).
 
